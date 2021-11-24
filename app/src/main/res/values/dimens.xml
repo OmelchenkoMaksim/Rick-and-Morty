@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="text_16sp">16sp</dimen>
-    <dimen name="normal_text_size">12sp</dimen>
-    <dimen name="mini_margin">4dp</dimen>
-    <dimen name="main_text">12sp</dimen>
-    <dimen name="button_text_size">10sp</dimen>
-    <dimen name="margin_main_fragments">4dp</dimen>
-    <dimen name="margin_details_fragment">8dp</dimen>
-    <dimen name="margin_recycler_view">2dp</dimen>
+    <dimen name="button_text_size">11sp</dimen>
     <dimen name="card_corner_radius_recycler_view">24dp</dimen>
-    <!-- without this parameter images not downloaded from the network are rendered incorrectly -->
-    <dimen name="special_image_dimen">180dp</dimen>
     <dimen name="image_dim">190dp</dimen>
+    <dimen name="main_text">12sp</dimen>
+    <dimen name="margin_details_fragment">8dp</dimen>
+    <dimen name="margin_main_fragments">4dp</dimen>
+    <dimen name="margin_recycler_view">2dp</dimen>
+    <dimen name="mini_margin">4dp</dimen>
+    <dimen name="name_text">13sp</dimen>
+    <dimen name="normal_text_size">12sp</dimen>
+    <dimen name="text_16sp">16sp</dimen>
 </resources>

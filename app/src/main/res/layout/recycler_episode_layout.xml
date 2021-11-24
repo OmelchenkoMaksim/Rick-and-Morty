@@ -61,8 +61,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textAlignment="textStart"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/main_text"
+                android:shadowColor="@color/black"
+                android:shadowDx="1.7"
+                android:shadowDy="1.7"
+                android:shadowRadius="2.7"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/name_text"
                 android:textStyle="italic"
                 tools:text="User name" />
         </LinearLayout>
