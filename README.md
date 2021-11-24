@@ -1,37 +1,24 @@
-# Финальный проект Andersen
+RICK AND MORTY API KOTLIN APK
 
-Приветсвую, Костя, ну или другой проверяющий :)
+Hi guys, this is my study project.
 
-Не знаю будут это читать или нет, но оставлю некоторые комментарии для понимания.
+At the moment 11.2021 I have been studying android for about 3 months,
+and don't know how all applying technologies work in best practices.
 
-ПРОВЕРКА СЕТИ
-Я сделал глобальный поток постоянно проверяющий доступ к сети, т.к. в зависимости от ее наличия или 
-отсутствия меняется поведение приложения.
-Увы нормальный метод который обращался к url https://rickandmortyapi.com пришлось вырезать т.к. он
-часто возвращал ошибки и говорил что интернет не работает, когда он на самом деле работал, потому
-что сайт мог не отвечать из-за большого количества запросов ретрофита
-Потому просто оставил проверку включен ли адаптер на смарте или нет.
+But in my project they are working, and i like it :)
 
-Метод для проверки сети из лекции deprecated, я не стал его применять:
-online = (applicationContext.getSystemService(Context.CONNECTIVITY_SERVICE)
-as ConnectivityManager).activeNetworkInfo.isConnected
+You can see:
+- Fragments
+- Splash Screen
+- Recycler View with Pagination (PagingDataAdapter)
+- Filters by Alert Dialog
+- Room (packing objects by convert it in json)
+- Retrofit (@GET @Query @Path)
+- Using some coroutines
 
-ФИЛЬТРЫ
-Все значения для фильтрации я сначала решил скачивать с сайта, но это создавало очень много обращений
-к нему и я решил что разумнее все поместить в локальную базу, причем фильтры когда есть интернет
-включают в себя все существующие варианты, а когда его нет то только те, что есть в базе
+And if you want you can install it (rim.apk)
 
-ПРОВЕРКА КОЛИЧЕСТВА ПОТОКОВ
-Thread.getAllStackTraces().size < 210
-Ретрофит в некоторых случаях создает много обращений к сети, например при открытии локации 
-Цитадель Риков, и когда этих обращений слишком много сайт перестает отвечать, для этого это проверка
-иначе будет отображаться пустой экран до тех пор пока сайт не отойдет.
+If you have any question or you want to applying some fix find me in Instagram
+max__am
 
-ДЛЯ КОСТИ
-Костя, ты говорил что не видел применение StaggeredGridLayoutManager, помнишь я в чате говорил что у
-меня проблема с белыми полями, и никакие wrap_content мне не помогли от них избавиться, но именно
-этот менеджер решил проблему, ради интереса замени в файле CharactersFragment в методе setAdapter на
-простой GridLayoutManager(requireContext(), 2) и прокрути быстро главный экран приложения.
-
-
-Даггер и тесты не успел добавить т.к. только в последний день закончил с кешем.
+i'm glad to conversation :)

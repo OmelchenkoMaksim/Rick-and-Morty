@@ -1,86 +1,85 @@
 <resources>
     <!-- Common -->
-    <string name="app_name">Rick and Morty</string>
-    <string name="refreshed">Refreshed!</string>
-    <string name="connection_restored">Connection restored!\nRefresh the page to access online functions!</string>
-    <string name="connection_lost">Connection lost!\nAfter the refresh, you will be taken to offline mode</string>
-    <string name="special_pagination_error">Special pagination error,\nRefresh after 7–10 sec to fix…</string>
     <string name="alert_throw_activity_cannot_be_null">Activity cannot be null</string>
+    <string name="app_name">Rick and Morty</string>
+    <string name="connection_lost">Connection lost!\nAfter the refresh, you will be taken to offline mode</string>
+    <string name="connection_restored">Connection restored!\nRefresh the page to access online functions!</string>
     <string name="launch_retrofit_failure">launch_retrofit_failure</string>
+    <string name="refreshed">Refreshed!</string>
+    <string name="special_pagination_error">Special pagination error,\nRefresh after 7–10 sec to fix…</string>
     <!-- Navigation Buttons -->
-    <string name="button_characters">Персонажи</string>
-    <string name="button_locations">Локации</string>
-    <string name="button_episodes">Эпизоды</string>
+    <string name="button_characters">Characters</string>
+    <string name="button_episodes">Episodes</string>
+    <string name="button_locations">Locations</string>
     <!-- Character Details -->
-    <string name="character_id_details">ID : </string>
-    <string name="character_name_details">name : </string>
-    <string name="character_status_details">status : </string>
-    <string name="character_species_details">species : </string>
-    <string name="character_type_details">type : </string>
-    <string name="character_gender_details">gender : </string>
-    <string name="character_origin_details">origin : </string>
-    <string name="character_location_details">location : </string>
     <string name="character_created_details">created : </string>
-    <string name="character_episodes_list_details">СПИСОК ЭПИЗОДОВ</string>
+    <string name="character_episodes_list_details">EPISODES LIST</string>
+    <string name="character_gender_details">gender : </string>
+    <string name="character_id_details">ID : </string>
+    <string name="character_location_details">location : </string>
+    <string name="character_name_details">name : </string>
+    <string name="character_origin_details">origin : </string>
+    <string name="character_species_details">species : </string>
+    <string name="character_status_details">status : </string>
+    <string name="character_type_details">type : </string>
     <!-- Episode Details -->
+    <string name="episode_air_date_details">air date : </string>
+    <string name="episode_characters_list_details">CHARACTERS LIST</string>
+    <string name="episode_created_details">created : </string>
+    <string name="episode_episode_details">episode : </string>
     <string name="episode_id_details">ID : </string>
     <string name="episode_name_details">name : </string>
-    <string name="episode_air_date_details">air date : </string>
-    <string name="episode_episode_details">episode : </string>
-    <string name="episode_created_details">created : </string>
-    <string name="episode_characters_list_details">СПИСОК ПЕРСОНАЖЕЙ</string>
     <!-- Location Details -->
+    <string name="location_created_details">created : </string>
+    <string name="location_dimension_details">dimension : </string>
     <string name="location_id_details">ID : </string>
+    <string name="location_list_residents_details">RESIDENTS LIST</string>
     <string name="location_name_details">name : </string>
     <string name="location_type_details">type : </string>
-    <string name="location_dimension_details">dimension : </string>
-    <string name="location_created_details">created : </string>
-    <string name="location_list_residents_details">СПИСОК РЕЗИДЕНТОВ</string>
     <!-- Search Menu -->
-    <string name="search_toast">Этот поиск работает по локальной базе,\nдля поиска в сети используйте фильтры</string>
-    <string name="search_hint_character">Type character name…</string>
-    <string name="search_hint_locations">Type location name…</string>
-    <string name="search_hint_episodes">Type episode name…</string>
-    <string name="menu_search">Search</string>
-    <string name="menu_filter">Filter</string>
     <string name="menu_back">back</string>
+    <string name="menu_filter">Filter</string>
+    <string name="menu_search">Search</string>
+    <string name="search_hint_character">Type character name…</string>
+    <string name="search_hint_episodes">Type episode name…</string>
+    <string name="search_hint_locations">Type location name…</string>
+    <string name="search_toast">This search work on local base,\nif you want search on internet click filter button</string>
     <!-- Alert Dialog Fragment -->
     <string name="character_alert_tag">character alert</string>
+    <string name="dimension_locations_alert_title_fragment">Choose dimension</string>
+    <string name="episode_alert_tag">episode alert</string>
+    <string name="episode_episodes_alert_title_fragment">Choose episode</string>
+    <string name="gender_characters_alert_title_fragment">Choose gender</string>
+    <string name="location_alert_tag">location alert</string>
     <string name="negative_alert_button_fragment">Cancel</string>
     <string name="positive_alert_button_fragment">OK</string>
-    <string name="gender_characters_alert_title_fragment">Choose gender</string>
     <string name="species_characters_alert_title_fragment">Choose species</string>
     <string name="status_characters_alert_title_fragment">Choose status</string>
-    <string name="types_characters_alert_title_fragment">Choose type</string>
-    <string name="episode_episodes_alert_title_fragment">Choose episode</string>
-    <string name="dimension_locations_alert_title_fragment">Choose dimension</string>
     <string name="type_locations_alert_title_fragment">Choose type</string>
+    <string name="types_characters_alert_title_fragment">Choose type</string>
     <!-- Filter -->
+    <string name="after_filtering_found_nothing">Hmm… I found nothing…\nPlease change request and try again</string>
     <string name="apply_filters_button">APPLY</string>
     <string name="close_filters_button">CLOSE</string>
-    <string name="input_name_filter_episodes">input name…</string>
-    <string name="episode_filter_episodes">episode</string>
-    <string name="input_name_filter_locations">input name…</string>
-    <string name="type_filter_locations">type</string>
     <string name="dimension_filter_locations">dimension</string>
+    <string name="episode_filter_episodes">episode</string>
+    <string name="gender_filter_characters">gender</string>
     <string name="input_name_filter_characters">input name…</string>
+    <string name="input_name_filter_episodes">input name…</string>
+    <string name="input_name_filter_locations">input name…</string>
     <string name="species_filter_characters">species</string>
     <string name="status_filter_characters">status</string>
     <string name="type_filter_characters">type</string>
-    <string name="gender_filter_characters">gender</string>
-    <string name="after_filtering_found_nothing">Hmm… I found nothing…\nPlease change request and try again</string>
+    <string name="type_filter_locations">type</string>
     <!-- Recycle View -->
+    <string name="air_date_recycler_view_episode">Air Date : </string>
+    <string name="dimension_recycler_view_location">Dimension : </string>
+    <string name="episode_recycler_view_episode">Episode : </string>
+    <string name="gender_recycle_view_character">Gender : </string>
     <string name="name_recycle_view_character">Name : </string>
+    <string name="name_recycler_view_episode">Name : </string>
+    <string name="name_recycler_view_location">Name : </string>
     <string name="species_recycle_view_character">Species : </string>
     <string name="status_recycle_view_character">Status : </string>
-    <string name="gender_recycle_view_character">Gender : </string>
-    <string name="name_recycler_view_episode">Name : </string>
-    <string name="episode_recycler_view_episode">Episode : </string>
-    <string name="air_date_recycler_view_episode">Air Date : </string>
-    <string name="name_recycler_view_location">Name : </string>
     <string name="type_recycler_view_location">Type : </string>
-    <string name="dimension_recycler_view_location">Dimension : </string>
-    <string name="episode_alert_tag">episode alert</string>
-    <string name="location_alert_tag">location alert</string>
-
 </resources>

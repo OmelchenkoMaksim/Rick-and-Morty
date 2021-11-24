@@ -48,7 +48,7 @@ class PagingViewModel(
 
     fun getCharactersListData(): Flow<PagingData<CharacterModel>> {
         return Pager(
-            config = PagingConfig(pageSize = 60, enablePlaceholders = true),
+            config = PagingConfig(pageSize = 20, enablePlaceholders = true),
             pagingSourceFactory = {
                 CharacterPagingSource(retroService) { characters ->
                     database.charactersList.addAll(characters)
@@ -61,7 +61,7 @@ class PagingViewModel(
 
     fun getEpisodesListData(): Flow<PagingData<EpisodeModel>> {
         return Pager(
-            config = PagingConfig(pageSize = 40, enablePlaceholders = false),
+            config = PagingConfig(pageSize = 20, enablePlaceholders = false),
             pagingSourceFactory = {
                 EpisodePagingSource(retroService) { episodes ->
                     database.episodesList.addAll(episodes)
@@ -74,7 +74,7 @@ class PagingViewModel(
 
     fun getLocationsListData(): Flow<PagingData<LocationModel>> {
         return Pager(
-            config = PagingConfig(pageSize = 40, enablePlaceholders = false),
+            config = PagingConfig(pageSize = 20, enablePlaceholders = false),
             pagingSourceFactory = {
                 LocationPagingSource(retroService) { locations ->
                     database.locationsList.addAll(locations)

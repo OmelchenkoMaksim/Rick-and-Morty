@@ -61,7 +61,7 @@ class CharactersAdapterPaging(
 
             Glide.with(image)
                 .load(item.image)
-                .placeholder(R.drawable.splash_main)
+                .placeholder(R.drawable.placeholder)
                 .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
                 .into(image)
         }

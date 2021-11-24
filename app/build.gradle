@@ -8,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.android.andersenrickandmorty"
+        applicationId "com.android.rickandmorty_by_max__am"
         minSdk 21
         targetSdk 31
         versionCode 1
@@ -34,79 +34,48 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.3.1'
-    implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.navigation:navigation-runtime-ktx:2.3.5'
-    implementation 'androidx.paging:paging-common-ktx:3.0.1'
-    implementation 'androidx.paging:paging-runtime-ktx:3.0.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
-
-    def activityVersion = '1.4.0'
-    def appCompatVersion = '1.3.0'
-    def constraintLayoutVersion = '2.0.4'
+    def androidxJunitVersion = '1.1.3'
+    def constraintLayoutVersion = '2.1.2'
     def coreTestingVersion = '2.1.0'
     def coroutines = '1.5.2'
-    def lifecycleVersion = '2.4.0'
-    def materialVersion = '1.3.0'
-    def roomVersion = '2.3.0'
-    // testing
+    def espressoVersion = '3.4.0'
     def junitVersion = '4.13.2'
-    def espressoVersion = '3.1.0'
-    def androidxJunitVersion = '1.1.2'
-
-    // ViewModel
+    def jupiterVersion = '5.8.1'
+    def lifecycleVersion = '2.4.0'
     def lifecycle_version = "2.4.0"
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
-
-    // retrofit
+    def materialVersion = '1.4.0'
     def retrofit_version = "2.9.0"
-    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
-    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
-    implementation "com.squareup.okhttp3:logging-interceptor:4.9.2"
+    def roomVersion = '2.3.0'
 
-    implementation 'com.google.code.gson:gson:2.8.8'
-
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
-    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
-
-    // glide
-    implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
-
-    // Dependencies for working with Architecture components
-    // You'll probably have to update the version numbers in build.gradle (Project)
-
-    // Room components
-    implementation "androidx.room:room-ktx:$roomVersion"
-    kapt "androidx.room:room-compiler:$roomVersion"
-    androidTestImplementation "androidx.room:room-testing:$roomVersion"
-
-    // Lifecycle components
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
-
-    // Kotlin components
-    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
-
-    // UI
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
     implementation "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.room:room-ktx:$roomVersion"
     implementation "com.google.android.material:material:$materialVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.2"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-runtime-ktx:2.3.5'
+    implementation 'androidx.paging:paging-common-ktx:3.1.0'
+    implementation 'androidx.paging:paging-runtime-ktx:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    kapt "androidx.room:room-compiler:$roomVersion"
 
-    // Testing
-    testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.arch.core:core-testing:$coreTestingVersion"
-    androidTestImplementation ("androidx.test.espresso:espresso-core:$espressoVersion", {
+    androidTestImplementation "androidx.room:room-testing:$roomVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
+    testImplementation "junit:junit:$junitVersion"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$jupiterVersion"
+    testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$jupiterVersion"
+    androidTestImplementation("androidx.test.espresso:espresso-core:$espressoVersion", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
-
 }
