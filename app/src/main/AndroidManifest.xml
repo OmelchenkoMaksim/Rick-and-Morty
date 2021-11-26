@@ -21,14 +21,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AndersenRickAndMorty"
+        android:theme="@style/Theme.NoTitle"
         tools:ignore="Instantiatable">
 
         <activity
             android:name="com.android.andersenrickandmorty.activities.SplashScreenActivity"
             android:exported="true"
-            android:screenOrientation="portrait"
             android:theme="@style/Theme.Splash_Screen"
+            android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
