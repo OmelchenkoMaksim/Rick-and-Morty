@@ -109,7 +109,7 @@ class CharactersDetailsFragment : Fragment() {
     private fun setAdapter() {
         episodesAdapterPaging = EpisodesAdapterPaging(requireContext())
         characterRecyclerViewDetails.layoutManager =
-            StaggeredGridLayoutManager(1, LinearLayoutManager.VERTICAL)
+            StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
         characterRecyclerViewDetails.adapter = episodesAdapterPaging
     }
 
